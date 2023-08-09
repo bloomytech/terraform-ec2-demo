@@ -55,7 +55,7 @@ resource "aws_instance" "web" {
   sudo systemctl start nginx
   sudo systemctl enable nginx
   sudo echo '<h1>Hello All & Welcome to Devops Class-Terraform </h1>' > /usr/share/nginx/html/index.html
-  sudo echo '<h2>This server was launched using terraformcloud  and nginx as the webserver  </h2>' >> /usr/share/nginx/html/index.html
+  sudo echo '<h2>This server was launched using terraform cloud  and nginx as the webserver  </h2>' >> /usr/share/nginx/html/index.html
   EOF
   #/usr/share/nginx/html
   vpc_security_group_ids      = [var.security_group_id] # Attach the specified security group
